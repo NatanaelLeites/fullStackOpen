@@ -1,0 +1,17 @@
+Diagrama de secuencia
+    SPA
+
+    navegador->>servidor: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    
+    servidor->>navegador: archivo HTML
+
+    navegador->>servidor: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    servidor-->>navegador: hoja de estilos css
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+
+    servidor-->>navegador: archivo JavaScript
+
+    navegador->>servidor: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    
+    servidor-->>navegador: data JSON
